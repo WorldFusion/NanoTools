@@ -1,0 +1,12 @@
+# nanopore tools
+export PATH=$PATH:$HOME/nanotools/Platypus/bin
+export PATH=$PATH:$HOME/nanotools/Sniffles/bin/sniffles
+export PATH=$PATH:$HOME/nanotools/bwa
+export PATH=$PATH:$HOME/nanotools/canu/bin
+export PATH=$PATH:$HOME/nanotools/graphmap/bin
+export PATH=$PATH:$HOME/nanotools/jre/bin
+export PATH=$PATH:$HOME/nanotools/last/bin
+export PATH=$PATH:$HOME/nanotools/nanopolish
+export PATH=$PATH:$HOME/nanotools/poretools/bin
+export PATH=$PATH:$HOME/nanotools/samtools/bin
+export PATH=$PATH:$HOME/nanotools/snpEff
