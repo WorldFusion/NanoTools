@@ -1,12 +1,10 @@
 @echo off
 
 cd /d %~dp0
+start %homedrive%%homepath%\Ubuntu\ubuntu1804.exe
 
-if exist .\Batch\init_ubuntu.bat (
-  call powershell start-process .\Batch\init_ubuntu.bat -verb runas 
-  if %ERRORLEVEL% == 1 exit(1)
-)
 
+echo "別ウインドウのアップデート終了を確認してください。"
 pause
 wsl bash -c "sudo apt-get -y update && sudo apt-get -y install python2.7 python-pip python-pip-whl zlibc libcurl4 r-base python3-pip" 
 wsl bash -c "pip install h5py matplotlib seaborn pandas biopython PyVcf wsgiref pysam poretools"
